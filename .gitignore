@@ -1,0 +1,4 @@
+react_crush_game/node_modules
+react_crush_game/dist
+react_crush_game/.cache
+react_crush_game/package-lock.json

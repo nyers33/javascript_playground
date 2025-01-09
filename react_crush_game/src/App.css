@@ -1,0 +1,122 @@
+.gameContainer {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vh;
+}
+
+.gameTitle {
+	align-self: center;
+	text-align: center;
+	font-family: math;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.cpContainer {
+	align-self: center;
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.cpTweakerContainer {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+	border: 2px solid gray;
+	border-radius: 4px;
+	border-spacing: 8px;
+	-moz-border-radius: 5px;
+	padding: 12px;
+	border-collapse: separate;
+}
+
+.cpTweakerTitle {
+	text-align: center;
+	font-family: math;
+	font-size: 16px;
+}
+
+.cpTweakerInput {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.cpTweakerButton {
+	display: inline-block;
+	font-family: math;
+	font-size: 18px;
+}
+
+.cpTweakerCounter {
+	display: inline-block;
+	text-align: center;
+	font-family: math;
+	font-size: 18px;
+	width: 32px;
+}
+
+.gameButton {
+	align-self: center;
+	display: inline-flex;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	border: 2px solid gray;
+	border-radius: 4px;
+	border-spacing: 8px;
+	-moz-border-radius: 5px;
+	font-family: math;
+	font-size: 22px;
+}
+
+.item0 {
+	background-color: white;
+}
+
+.item1 {
+	background-color: red;
+}
+
+.item2 {
+	background-color: green;
+}
+
+.item3 {
+	background-color: blue;
+}
+
+.item4 {
+	background-color: yellow;
+}
+
+.item5 {
+	background-color: orange;
+}
+
+.item6 {
+	background-color: purple;
+}
+
+.item7 {
+	background-color: brown;
+}
+
+table {
+	border: 2px solid gray;
+	border-radius: 4px;
+	border-spacing: 8px;
+	-moz-border-radius: 5px;
+	padding: 12px;
+	border-collapse: separate;
+}
+
+td {
+	width: 0px;
+	border: 2px solid black;
+	border-radius: 4px;
+	-moz-border-radius: 5px;
+	padding: 24px;
+}
