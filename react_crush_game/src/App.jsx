@@ -33,9 +33,9 @@ let App = function CrushGame() {
     setCount(Math.min(Math.max(currentCount + tweakValue, counterLimitMin), counterLimitMax));
   }
   
-  function TweakValueButton({ onClick, text }) {
+  function TweakValueButton({ onClick, text, disabled }) {
     return (
-      <button className="cpTweakerButton" role="button" onClick={onClick}>{text}</button>
+      <button className="cpTweakerButton" role="button" disabled={disabled} onClick={onClick}>{text}</button>
     );
   }
   
@@ -53,7 +53,7 @@ let App = function CrushGame() {
     return <table><tbody>{rows}</tbody></table>;
   }
   
-  function CrushGameTweaker({ title, count, setCount, min, max }) {
+  function CrushGameTweaker({ title, count, setCount, min, max, disabled }) {
     return (
       <div className="cpTweakerContainer">
         <div className="cpTweakerTitle">{title}</div>
@@ -61,11 +61,13 @@ let App = function CrushGame() {
           <TweakValueButton
             onClick={() => tweakCounter(setCount, count, -1, min, max)}
             text={"−"}
+            disabled = {disabled}
           />
         <div className="cpTweakerCounter">{count}</div>
           <TweakValueButton
             onClick={() => tweakCounter(setCount, count, 1, min, max)}
             text={"+"}
+            disabled = {disabled}
           />
         </div>
       </div>
@@ -86,6 +88,7 @@ let App = function CrushGame() {
             setCount: setNumberOfItem,
             min: 3,
             max: 7,
+            disabled: bIsInitialized
           })}
 
           {CrushGameTweaker({
@@ -94,6 +97,7 @@ let App = function CrushGame() {
             setCount: setNumberOfCellX,
             min: 3,
             max: 12,
+            disabled: bIsInitialized
           })}
 
           {CrushGameTweaker({
@@ -102,6 +106,7 @@ let App = function CrushGame() {
             setCount: setNumberOfCellY,
             min: 5,
             max: 9,
+            disabled: bIsInitialized
           })}
 
         </div>
